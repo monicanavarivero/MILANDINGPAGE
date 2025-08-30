@@ -1,0 +1,318 @@
+@media (max-width: 769px) {
+
+  /* Contenedor principal con fondo específico */
+  .container {
+    position: relative;
+  }
+
+  body {
+    background-image: url("../img/iPhone.jpg");
+    height: 5659px; /* Mismo alto que la imagen */
+    background-repeat: no-repeat; /* Se repite verticalmente */
+  background-size: 100% auto;  /* Ocupa el ancho completo */
+    background-position: top center; /* Comienza desde arriba*/
+
+  background-repeat: no-repeat; /* Se repite verticalmente */
+  background-size: 100% auto;  /* Ocupa el ancho completo */
+  background-position: top center; /* Comienza desde arriba*/
+
+  
+    }
+
+  /* Oculta imagen de escritorio */
+  .tercera-columna {
+    display: none;
+  }
+
+  /* Muestra y anima portada fuera del grid */
+  .portada-asomada {
+    display: block;
+    width: 140px;
+    animation: flotar 6s ease-in-out infinite;
+  }
+
+  /* Posición del logo en mobile */
+  .primera-columna {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 0px;
+
+    transform: scale(2);
+    transform-origin: top left;
+  }
+
+  /* Posición de planeta y botones */
+  .segunda-columna {
+    transform-origin: top center;
+    margin-top: 360px; 
+    
+  }
+
+    .planeta-flotante {
+  width: 50px; /* Ajusta según tu diseño */
+  animation: flotar 6s ease-in-out infinite;
+  margin-top: 50px; 
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+  /* Animación planeta (reutilizada para portada-asomada) */
+  @keyframes flotar {
+    0%   { transform: translateY(0) scale(1); }
+    50%  { transform: translateY(-15px) scale(1.05); }
+    100% { transform: translateY(0) scale(1); }
+  }
+
+  /* Animación de balanceo para el h1 */
+  @keyframes balanceo {
+    0%   { transform: rotate(4deg); }
+    50%  { transform: rotate(-4deg); }
+    100% { transform: rotate(4deg); }
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .nombre {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: -420px;
+    margin-bottom: 10px;
+  }
+
+  .titulo-contorno {
+    font-size: 35px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .uxui-palpita {
+    font-size: 96px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow:
+      0 0 6px rgba(11, 11, 11, 0.8),
+      0 0 12px rgba(255, 255, 255, 0.5);
+    animation: balanceo 3s ease-in-out infinite;
+    animation-delay: 2s;
+    transform-origin: center;
+    text-transform: uppercase;
+  }
+
+  .front-palpita {
+    font-size: 20px;
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: 0.8px white;
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  @keyframes balanceo {
+    0%   { transform: rotate(2deg); }
+    50%  { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+  }
+
+  .texto-introduccion {
+  margin-top: 483px; /* Lo sube más */
+  text-align: center;
+  font-size: 23px;
+  font-weight: 100;
+  color: white;
+  line-height: 1.2; /* Menor espacio entre líneas */
+  letter-spacing: 1px; /* Separa las letras horizontalmente */
+  max-width: 80%; /* Ocupa casi todo el ancho */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+}
+.texto-introduccion strong {
+  font-weight: 700;
+
+}
+
+
+  /* ✅ Mostrar título solo en responsive */
+  .titulo-del-block {
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    width: 80%;
+    margin-top: 155px;
+    margin-bottom: 0px;
+    margin-left: -30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* ✅ Reemplazar imagen por otra (sin deformarla) */
+  .fondo-block-img {
+    content: url("../img/blockquoetemobil.png"); /* TU NUEVA IMAGEN */
+    width: 90%;          /* o 80% si la quieres más angosta */
+    max-width: 350px;    /* valor opcional para evitar que se haga muy grande */
+    margin: 0 auto;      /* centra horizontalmente */
+    display: block;  
+    height: auto;
+    border-radius: 20px; /* si quieres redondeo también aquí */
+  }
+
+  /* ✅ Ajustar contenido si lo deseas */
+  .contenido-cita {
+    padding: 20px 15px;
+    margin: 0 auto; 
+  
+    width: 80%; 
+    justify-content: flex-start;
+     border-radius: 20px; 
+  }
+
+  .contenido-cita p {
+    font-size: 10px;
+    line-height: 1.8;
+    max-width: 90%;
+     margin: 0 auto; 
+  }
+
+  .contenido-cita span {
+    margin-top: 80px;
+    font-size: 16px;
+  }
+
+ .barra-loquehago {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+    padding: 20px 20px;
+    margin-top: 50px;
+    background: linear-gradient(to right, rgba(20, 75, 219, 0.3), rgba(8, 39, 120, 0.3));
+    text-align: center;
+  }
+
+  .barra-loquehago span {
+    font-size: 15px;
+    width: 80px;         /* ancho fijo para centrar */
+    margin: 0 auto;      /* centra en cada celda */
+  }
+
+  /* Desfase visual de segunda fila para que se vean intercaladas */
+  .barra-loquehago span:nth-child(n+5) {
+    transform: translateX(12%);
+  }
+
+  .contenedor-rectangulos {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+     transform: scale(0.9);
+  }
+
+  .contenido-rectangulo {
+  transform: scale(0.9);
+  transform-origin: center top; /* puedes ajustar el origen si quieres */
+  margin-top: 10px;
+}
+
+
+  .rectangulo {
+    width: 100%;
+    height: 10%;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .grid-imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  .img-box img {
+    width: 40px;
+  }
+
+  .img-box p {
+    font-size: 10px;
+  }
+
+  .titulo-rectangulo {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+
+.slide-principal {
+  min-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: -30px;
+  
+  transform: scale(.9);
+    transform-origin: center;
+}
+
+  .bloque-cita {
+    max-width: 90%;
+  }
+  .contenido-slide {
+    padding: 40px 15px 15px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  
+  
+
+  
+
+}
+
+
+
+
+
+
+
+@media (min-width: 770px) {
+.titulo-del-block {
+  display: none;
+ }
+
+.titulo-del-block{ 
+   display: none;
+}
+
+  }
