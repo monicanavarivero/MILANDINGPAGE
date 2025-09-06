@@ -628,16 +628,27 @@ img {
   position: relative;
   font-family: 'Poppins', sans-serif;
 }
+.angulo_educacion {
+  background: linear-gradient(to right, rgba(20, 75, 219, 0.3), rgba(8, 39, 120, 0.3));
+  border: 2px solid white;
+  width: 350px;
+  height: 350px;
+  padding: 5px 30px 30px;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
 
 .icono-flotante {
   position: absolute;
   top: -50px; /* lo sube fuera del cuadro */
-  left: 20%;
+  left:50%;
   transform: translateX(-50%);
-  width: 130px; /* ajusta según tu imagen */
+  width: 100px; /* ajusta según tu imagen */
   height: auto;
 
-     transform: scale(2);
+     transform: scale(150rem);
     transform-origin: center;
 }
 
@@ -835,4 +846,102 @@ img {
     transform-origin: center;
 
 }
+
+
+.titulo-3  {
+  font-size: 80px;
+  color: #c1ec164c;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10.8rem;
+  font-weight: 1000;
+  margin-top: 26rem;
+
+}
+
+.titulo-s3 {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-top: -3.5rem;
+  
+}
+
+F
+/*formulariio*/
+
+  .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .formulario {
+      max-width: 50%;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .opciones {
+      margin: 15px 0;
+    }
+
+    .opciones label {
+      display: block;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #333, #555);
+      color: white;
+      cursor: pointer;
+    }
+
+    .contacto {
+      max-width: 40%;
+    }
+
+    .redes {
+      margin-top: 30px;
+    }
+
+    .redes a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
 
